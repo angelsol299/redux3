@@ -1,18 +1,14 @@
 import React, { Component } from "react";
-
 import "./App.css";
 import Posts from "./components/Posts";
+import PostForm from "./components/PostForm";
 
 class App extends Component {
-  componentWillMount() {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then(res => res.json())
-      .then(data => console.log(data));
-  }
-
   render() {
     return (
       <div className="App">
+        <PostForm />
+        <br />
         <Posts />
       </div>
     );
