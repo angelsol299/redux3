@@ -8,6 +8,12 @@ class Post extends Component {
     this.props.fetchPosts();
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.newPost) {
+      this.props.posts;
+    }
+  }
+
   render() {
     const postItems = this.props.posts.map(post => (
       <div key={post.id}>
