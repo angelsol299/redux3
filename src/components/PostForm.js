@@ -27,7 +27,7 @@ class PostForm extends Component {
       body: this.state.body
     };
 
-    //call cation
+    this.props.createPost(post);
   }
 
   render() {
