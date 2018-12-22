@@ -24,7 +24,7 @@ class Post extends Component {
   }
 }
 
-Posts.propTypes = {
+Post.propTypes = {
   fetchPosts: PropTypes.func.isRequired,
   posts: PropTypes.array.isRequired
 };
