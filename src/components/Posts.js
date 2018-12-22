@@ -10,7 +10,7 @@ class Post extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.newPost) {
-      this.props.posts.undhift(nextProps.newPost);
+      this.props.posts.unshift(nextProps.newPost);
     }
   }
 
